@@ -33,7 +33,7 @@ namespace GitHubLabeler
         public static IConfiguration Configuration { get; set; }
         private static async Task Main(string[] args)
         {
-            SetupAppConfiguration();
+            //SetupAppConfiguration();
 
             //1. ChainedBuilderExtensions and Train the model
             BuildAndTrainModel(DataSetLocation, ModelFilePathName, MyTrainerStrategy.OVAAveragedPerceptronTrainer);

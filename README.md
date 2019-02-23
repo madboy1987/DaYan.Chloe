@@ -1,179 +1,179 @@
-# ML.NET ç¤ºä¾‹
+# ML.NET Ê¾Àı
 [![](https://dotnet.visualstudio.com/_apis/public/build/definitions/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/22/badge)](https://dotnet.visualstudio.com/public/_build/index?definitionId=22 )
-[ML.NET](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet) æ˜¯ä¸€ä¸ªè·¨å¹³å°çš„å¼€æºæœºå™¨å­¦ä¹ æ¡†æ¶ï¼Œä½¿.NETå¼€å‘äººå‘˜ä½¿ç”¨æœºå™¨å­¦ä¹ å˜å¾—å¾ˆå®¹æ˜“ã€‚åœ¨è¿™ä¸ªGitHub å­˜å‚¨åº“ä¸­ï¼Œæˆ‘ä»¬æä¾›äº†ç¤ºä¾‹ï¼Œè¿™äº›ç¤ºä¾‹å°†å¸®åŠ©æ‚¨å¼€å§‹ä½¿ç”¨ML.NETï¼Œä»¥åŠå¦‚ä½•å°†ML.NETåŠ å…¥åˆ°ç°æœ‰çš„å’Œæ–°çš„.NETåº”ç”¨ç¨‹åºä¸­ã€‚
+[ML.NET](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet) ÊÇÒ»¸ö¿çÆ½Ì¨µÄ¿ªÔ´»úÆ÷Ñ§Ï°¿ò¼Ü£¬Ê¹.NET¿ª·¢ÈËÔ±Ê¹ÓÃ»úÆ÷Ñ§Ï°±äµÃºÜÈİÒ×¡£ÔÚÕâ¸öGitHub ´æ´¢¿âÖĞ£¬ÎÒÃÇÌá¹©ÁËÊ¾Àı£¬ÕâĞ©Ê¾Àı½«°ïÖúÄú¿ªÊ¼Ê¹ÓÃML.NET£¬ÒÔ¼°ÈçºÎ½«ML.NET¼ÓÈëµ½ÏÖÓĞµÄºÍĞÂµÄ.NETÓ¦ÓÃ³ÌĞòÖĞ¡£
 
-å­˜å‚¨åº“ä¸­æœ‰ä¸¤ç§ç±»å‹çš„ç¤ºä¾‹/åº”ç”¨ç¨‹åºï¼š
+´æ´¢¿âÖĞÓĞÁ½ÖÖÀàĞÍµÄÊ¾Àı/Ó¦ÓÃ³ÌĞò£º
 
-* ![](https://github.com/dotnet/machinelearning-samples/blob/features/samples-new-api/images/app-type-getting-started.png)  å…¥é—¨ - é’ˆå¯¹æ¯ä¸ªæœºå™¨å­¦ä¹ ä»»åŠ¡æˆ–é¢†åŸŸçš„ML.NETä»£ç ç¤ºä¾‹ï¼Œé€šå¸¸ä½œä¸ºç®€å•çš„æ§åˆ¶å°åº”ç”¨ç¨‹åºå®ç°ã€‚ 
+* ![](https://github.com/dotnet/machinelearning-samples/blob/features/samples-new-api/images/app-type-getting-started.png)  ÈëÃÅ - Õë¶ÔÃ¿¸ö»úÆ÷Ñ§Ï°ÈÎÎñ»òÁìÓòµÄML.NET´úÂëÊ¾Àı£¬Í¨³£×÷Îª¼òµ¥µÄ¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòÊµÏÖ¡£ 
 
-* ![](https://github.com/dotnet/machinelearning-samples/blob/features/samples-new-api/images/app-type-e2e.png)  ç»ˆç«¯åº”ç”¨ç¨‹åº - ä½¿ç”¨ML.NETè¿›è¡Œæœºå™¨å­¦ä¹ çš„Webï¼Œæ¡Œé¢ï¼Œç§»åŠ¨å’Œå…¶ä»–åº”ç”¨ç¨‹åºçš„å®é™…ä¾‹å­
+* ![](https://github.com/dotnet/machinelearning-samples/blob/features/samples-new-api/images/app-type-e2e.png)  ÖÕ¶ËÓ¦ÓÃ³ÌĞò - Ê¹ÓÃML.NET½øĞĞ»úÆ÷Ñ§Ï°µÄWeb£¬×ÀÃæ£¬ÒÆ¶¯ºÍÆäËûÓ¦ÓÃ³ÌĞòµÄÊµ¼ÊÀı×Ó
 
-æ ¹æ®åœºæ™¯å’Œæœºå™¨å­¦ä¹ é—®é¢˜/ä»»åŠ¡ï¼Œå®˜æ–¹ML.NETç¤ºä¾‹è¢«åˆ†æˆå¤šä¸ªç±»åˆ«ï¼Œå¯é€šè¿‡ä¸‹è¡¨è®¿é—®ï¼š
+¸ù¾İ³¡¾°ºÍ»úÆ÷Ñ§Ï°ÎÊÌâ/ÈÎÎñ£¬¹Ù·½ML.NETÊ¾Àı±»·Ö³É¶à¸öÀà±ğ£¬¿ÉÍ¨¹ıÏÂ±í·ÃÎÊ£º
 
 <table>
  <tr>
    <td width="25%">
-      <h3><b>æœºå™¨å­¦ä¹ ä»»åŠ¡</b></h3>
+      <h3><b>»úÆ÷Ñ§Ï°ÈÎÎñ</b></h3>
   </td>
   <td>
-      <h3 width="35%"><b>è¯´æ˜</b></h3>
+      <h3 width="35%"><b>ËµÃ÷</b></h3>
   </td>
   <td>
-      <h3><b>åœºæ™¯</b></h3>
+      <h3><b>³¡¾°</b></h3>
   </td>
  </tr>
  <tr>
    <td width="25%">
-      <h3>äºŒå…ƒåˆ†ç±»</h3>
-      <img src="images/Binary Classification.png" alt="äºŒå…ƒåˆ†ç±» å›¾è¡¨" width="120" height="120"  align="middle">
+      <h3>¶şÔª·ÖÀà</h3>
+      <img src="images/Binary Classification.png" alt="¶şÔª·ÖÀà Í¼±í" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  å°†ç»™å®šé›†åˆä¸­çš„å…ƒç´ åˆ†ç±»ä¸ºä¸¤ç»„ï¼Œé¢„æµ‹æ¯ä¸ªå…ƒç´ å±äºå“ªä¸ªç»„ã€‚
+  ½«¸ø¶¨¼¯ºÏÖĞµÄÔªËØ·ÖÀàÎªÁ½×é£¬Ô¤²âÃ¿¸öÔªËØÊôÓÚÄÄ¸ö×é¡£
   </td>
     <td>
-      <h4>æƒ…ç»ªåˆ†æ &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/BinaryClassification_SentimentAnalysis">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/BinaryClassification_SentimentAnalysis">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>åƒåœ¾ä¿¡æ¯æ£€æµ‹ &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/BinaryClassification_SpamDetection">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>æ¬ºè¯ˆè¯†åˆ« &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
+      <h4>ÇéĞ÷·ÖÎö &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/BinaryClassification_SentimentAnalysis">C#£¨ÒÑ·­Òë£©</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/BinaryClassification_SentimentAnalysis">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>À¬»øĞÅÏ¢¼ì²â &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/BinaryClassification_SpamDetection">C#£¨ÒÑ·­Òë£©</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>ÆÛÕ©Ê¶±ğ &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
   </td>
  </tr>
  <tr>
    <td width="25%">
-      <h3>å¤šç±»åˆ†ç±»</h3>
-      <img src="images/Multiple Classification.png" alt="å¤šç±»åˆ†ç±»" width="120" height="120"  align="middle">
+      <h3>¶àÀà·ÖÀà</h3>
+      <img src="images/Multiple Classification.png" alt="¶àÀà·ÖÀà" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  å°†å®ä¾‹åˆ†ç±»ä¸ºä¸‰ä¸ªæˆ–æ›´å¤šä¸ªç±»ä¸­çš„ä¸€ä¸ªï¼Œé¢„æµ‹æ¯ä¸ªç±»å±äºå“ªä¸ªç»„ã€‚
+  ½«ÊµÀı·ÖÀàÎªÈı¸ö»ò¸ü¶à¸öÀàÖĞµÄÒ»¸ö£¬Ô¤²âÃ¿¸öÀàÊôÓÚÄÄ¸ö×é¡£
   </td>
   <td>
-      <h4>é—®é¢˜åˆ†ç±» &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ç»ˆç«¯åº”ç”¨ç¨‹åºå›¾æ ‡"></h4>
-      <h4>é¸¢å°¾èŠ±åˆ†ç±» &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/MulticlassClassification_Iris">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp; &nbsp;<a href="samples/fsharp/getting-started/MulticlassClassification_Iris">F#</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
+      <h4>ÎÊÌâ·ÖÀà &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ÖÕ¶ËÓ¦ÓÃ³ÌĞòÍ¼±ê"></h4>
+      <h4>ğ°Î²»¨·ÖÀà &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/MulticlassClassification_Iris">C#£¨ÒÑ·­Òë£©</a> &nbsp; &nbsp;<a href="samples/fsharp/getting-started/MulticlassClassification_Iris">F#</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
   </td>
  </tr>
  <tr>
    <td width="25%">
-      <h3>å›å½’</h3>
-      <img src="images/Regression.png" alt="å›å½’å›¾æ ‡" width="120" height="120"  align="middle">
+      <h3>»Ø¹é</h3>
+      <img src="images/Regression.png" alt="»Ø¹éÍ¼±ê" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  ç”¨ç»™å®šçš„è¾“å…¥å˜é‡æ•°æ®é¢„æµ‹ä¸€ä¸ªæ•°å€¼ã€‚å¹¿æ³›ç”¨äºé¢„æŠ¥å’Œé¢„æµ‹ã€‚
+  ÓÃ¸ø¶¨µÄÊäÈë±äÁ¿Êı¾İÔ¤²âÒ»¸öÊıÖµ¡£¹ã·ºÓÃÓÚÔ¤±¨ºÍÔ¤²â¡£
   </td>
   <td>
-      <h4>ä»·æ ¼é¢„æµ‹ &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/Regression_TaxiFarePrediction">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/Regression_TaxiFarePrediction">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>é”€å”®é¢„æµ‹ &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/end-to-end-apps/Regression-SalesForecast">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a>  &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ç»ˆç«¯åº”ç”¨ç¨‹åºå›¾æ ‡"></h4>
-      <h4>éœ€æ±‚é¢„æµ‹ &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/Regression_BikeSharingDemand">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
+      <h4>¼Û¸ñÔ¤²â &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/Regression_TaxiFarePrediction">C#£¨ÒÑ·­Òë£©</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/Regression_TaxiFarePrediction">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>ÏúÊÛÔ¤²â &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/end-to-end-apps/Regression-SalesForecast">C#£¨ÒÑ·­Òë£©</a>  &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ÖÕ¶ËÓ¦ÓÃ³ÌĞòÍ¼±ê"></h4>
+      <h4>ĞèÇóÔ¤²â &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/Regression_BikeSharingDemand">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
   </td>
  </tr>
  <tr>
    <td width="25%">
-      <h3>å»ºè®®</h3>
-      <img src="images/Recommendation.png" alt="å»ºè®®å›¾æ ‡" width="120" height="120"  align="middle">
+      <h3>½¨Òé</h3>
+      <img src="images/Recommendation.png" alt="½¨ÒéÍ¼±ê" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  æ¨èç³»ç»Ÿé€šå¸¸ä½¿ç”¨åŸºäºå†…å®¹å’ŒåŸºäºååŒè¿‡æ»¤çš„ç®—æ³•ã€‚ ååŒè¿‡æ»¤ç®—æ³•åŸºäºç”¨æˆ·è¿‡å»çš„è¡Œä¸º/å–œå¥½/è¯„åˆ†æ¥é¢„æµ‹ä»–å¯èƒ½å–œæ¬¢çš„é¡¹ç›®/äº§å“ã€‚
+  ÍÆ¼öÏµÍ³Í¨³£Ê¹ÓÃ»ùÓÚÄÚÈİºÍ»ùÓÚĞ­Í¬¹ıÂËµÄËã·¨¡£ Ğ­Í¬¹ıÂËËã·¨»ùÓÚÓÃ»§¹ıÈ¥µÄĞĞÎª/Ï²ºÃ/ÆÀ·ÖÀ´Ô¤²âËû¿ÉÄÜÏ²»¶µÄÏîÄ¿/²úÆ·¡£
   </td>
   <td>
-      <h4>ç”µå½±æ¨è &nbsp;&nbsp;&nbsp;
-        <a href="samples/csharp/getting-started/MatrixFactorization_MovieRecommendation">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡">
-        <a href="samples/csharp/end-to-end-apps/Recommendation-MovieRecommender">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ç»ˆç«¯åº”ç”¨ç¨‹åºå›¾æ ‡"> </h4>
-       <h4>äº§å“æ¨è &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/MatrixFactorization_ProductRecommendation">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a><img src="images/app-type-getting-started.png" alt="Getting started icon"> </h4>
+      <h4>µçÓ°ÍÆ¼ö &nbsp;&nbsp;&nbsp;
+        <a href="samples/csharp/getting-started/MatrixFactorization_MovieRecommendation">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê">
+        <a href="samples/csharp/end-to-end-apps/Recommendation-MovieRecommender">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ÖÕ¶ËÓ¦ÓÃ³ÌĞòÍ¼±ê"> </h4>
+       <h4>²úÆ·ÍÆ¼ö &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/MatrixFactorization_ProductRecommendation">C#£¨ÒÑ·­Òë£©</a><img src="images/app-type-getting-started.png" alt="Getting started icon"> </h4>
   </td>
  </tr>
   <tr>
    <td width="25%">
-      <h3>èšç±»</h3>
-      <img src="images/Clustering.png" alt="èšç±»ç»˜å›¾" width="120" height="120"  align="middle">
+      <h3>¾ÛÀà</h3>
+      <img src="images/Clustering.png" alt="¾ÛÀà»æÍ¼" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  ä»¥ä¸€ç§æ–¹å¼å¯¹ä¸€ç»„å¯¹è±¡è¿›è¡Œåˆ†ç»„çš„æœºå™¨å­¦ä¹ ä»»åŠ¡ï¼Œä½¿å¾—åŒä¸€ç»„ä¸­çš„å¯¹è±¡ï¼ˆç§°ä¸ºç¾¤é›†ï¼‰å½¼æ­¤æ›´ç›¸ä¼¼ï¼Œè€Œä¸æ˜¯ä¸å…¶ä»–ç»„ä¸­çš„å¯¹è±¡ç›¸ä¼¼ã€‚ è¿™æ˜¯ä¸€é¡¹æ¢ç´¢æ€§ä»»åŠ¡ã€‚ å®ƒä¸ä¼šæŠŠé¡¹ç›®åˆ†ç±»åˆ°ç‰¹å®šçš„æ ‡ç­¾ä¸Šã€‚
+  ÒÔÒ»ÖÖ·½Ê½¶ÔÒ»×é¶ÔÏó½øĞĞ·Ö×éµÄ»úÆ÷Ñ§Ï°ÈÎÎñ£¬Ê¹µÃÍ¬Ò»×éÖĞµÄ¶ÔÏó£¨³ÆÎªÈº¼¯£©±Ë´Ë¸üÏàËÆ£¬¶ø²»ÊÇÓëÆäËû×éÖĞµÄ¶ÔÏóÏàËÆ¡£ ÕâÊÇÒ»ÏîÌ½Ë÷ĞÔÈÎÎñ¡£ Ëü²»»á°ÑÏîÄ¿·ÖÀàµ½ÌØ¶¨µÄ±êÇ©ÉÏ¡£
   </td>
   <td>
-      <h4>å®¢æˆ·ç»†åˆ† &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/Clustering_CustomerSegmentation">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>é¸¢å°¾èŠ±èšç±» &nbsp;&nbsp;&nbsp;
-      <a href="samples/csharp/getting-started/Clustering_Iris">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/Clustering_Iris">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
+      <h4>¿Í»§Ï¸·Ö &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/Clustering_CustomerSegmentation">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>ğ°Î²»¨¾ÛÀà &nbsp;&nbsp;&nbsp;
+      <a href="samples/csharp/getting-started/Clustering_Iris">C#£¨ÒÑ·­Òë£©</a> &nbsp; &nbsp; <a href="samples/fsharp/getting-started/Clustering_Iris">F#</a>&nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
   </td>
  </tr>
   <tr>
    <td width="25%">
-      <h3>å¼‚å¸¸æ£€æµ‹</h3>
-      <img src="images/Anomaly Detection.png" alt="å¼‚å¸¸æ£€æµ‹å›¾è¡¨" width="120" height="120"  align="middle">
+      <h3>Òì³£¼ì²â</h3>
+      <img src="images/Anomaly Detection.png" alt="Òì³£¼ì²âÍ¼±í" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-ä»»åŠ¡çš„ç›®æ ‡æ˜¯è¯†åˆ«ç¨€æœ‰é¡¹ç›®ï¼Œäº‹ä»¶æˆ–è§‚æµ‹æ•°æ®ï¼Œå®ƒä»¬ä¸å¤§å¤šæ•°æ•°æ®æ˜¾è‘—ä¸åŒï¼Œä»è€Œå¼•èµ·æ€€ç–‘ã€‚é€šå¸¸æ˜¯è¯¸å¦‚é“¶è¡Œæ¬ºè¯ˆï¼Œç»“æ„ç¼ºé™·æˆ–åŒ»ç–—é—®é¢˜ç­‰
+ÈÎÎñµÄÄ¿±êÊÇÊ¶±ğÏ¡ÓĞÏîÄ¿£¬ÊÂ¼ş»ò¹Û²âÊı¾İ£¬ËüÃÇÓë´ó¶àÊıÊı¾İÏÔÖø²»Í¬£¬´Ó¶øÒıÆğ»³ÒÉ¡£Í¨³£ÊÇÖîÈçÒøĞĞÆÛÕ©£¬½á¹¹È±Ïİ»òÒ½ÁÆÎÊÌâµÈ
   </td>
   <td>
-      <h4>å³å°†æ¨å‡º</h4>
+      <h4>¼´½«ÍÆ³ö</h4>
   </td>
  </tr>
   <tr>
    <td width="25%">
-      <h3>æ’å</h3>
-      <img src="images/Ranking.png" alt="æ’åæ ‡å¿—" width="120" height="120"  align="middle">
+      <h3>ÅÅÃû</h3>
+      <img src="images/Ranking.png" alt="ÅÅÃû±êÖ¾" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  ä¸ºä¿¡æ¯æ£€ç´¢ç³»ç»Ÿæ„å»ºæ’åæ¨¡å‹ï¼Œä»¥ä¾¿æ ¹æ®ç”¨æˆ·çš„è¾“å…¥å˜é‡ï¼Œå¦‚å–œæ¬¢/ä¸å–œæ¬¢ã€è¯­å¢ƒã€å…´è¶£ç­‰å¯¹é¡¹ç›®è¿›è¡Œæ’åº/æ’åã€‚
+  ÎªĞÅÏ¢¼ìË÷ÏµÍ³¹¹½¨ÅÅÃûÄ£ĞÍ£¬ÒÔ±ã¸ù¾İÓÃ»§µÄÊäÈë±äÁ¿£¬ÈçÏ²»¶/²»Ï²»¶¡¢Óï¾³¡¢ĞËÈ¤µÈ¶ÔÏîÄ¿½øĞĞÅÅĞò/ÅÅÃû¡£
   </td>
   <td>
-      <h4>å³å°†æ¨å‡º</h4>
+      <h4>¼´½«ÍÆ³ö</h4>
   </td>
  </tr>
   <tr>
    <td width="25%">
-      <h3>æ·±åº¦å­¦ä¹ </h3>
-      <img src="images/Deep Learning.png" alt="æ·±åº¦å­¦ä¹ æ ‡å¿—" width="120" height="120"  align="middle">
+      <h3>Éî¶ÈÑ§Ï°</h3>
+      <img src="images/Deep Learning.png" alt="Éî¶ÈÑ§Ï°±êÖ¾" width="120" height="120"  align="middle">
   </td>
   <td width="35%">
-  æ·±åº¦å­¦ä¹ æ˜¯æœºå™¨å­¦ä¹ çš„ä¸€ä¸ªå­é›†ã€‚æ·±å±‚å­¦ä¹ æ¶æ„ï¼Œå¦‚æ·±åº¦ç¥ç»ç½‘ç»œï¼Œé€šå¸¸åº”ç”¨äºè¯¸å¦‚è®¡ç®—æœºè§†è§‰ï¼ˆç›®æ ‡æ£€æµ‹ã€å›¾åƒåˆ†ç±»ã€é£æ ¼è½¬ç§»ï¼‰ã€è¯­éŸ³è¯†åˆ«ã€è‡ªç„¶è¯­è¨€å¤„ç†å’ŒéŸ³é¢‘è¯†åˆ«ç­‰é¢†åŸŸã€‚
+  Éî¶ÈÑ§Ï°ÊÇ»úÆ÷Ñ§Ï°µÄÒ»¸ö×Ó¼¯¡£Éî²ãÑ§Ï°¼Ü¹¹£¬ÈçÉî¶ÈÉñ¾­ÍøÂç£¬Í¨³£Ó¦ÓÃÓÚÖîÈç¼ÆËã»úÊÓ¾õ£¨Ä¿±ê¼ì²â¡¢Í¼Ïñ·ÖÀà¡¢·ç¸ñ×ªÒÆ£©¡¢ÓïÒôÊ¶±ğ¡¢×ÔÈ»ÓïÑÔ´¦ÀíºÍÒôÆµÊ¶±ğµÈÁìÓò¡£
   </td>
   <td>
-      <h4>é›†æˆTensorFlow &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow">C#ï¼ˆå·²ç¿»è¯‘ï¼‰</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>ç›®æ ‡æ£€æµ‹ å³å°†æ¨å‡º &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
-      <h4>é£æ ¼è½¬ç§»  å³å°†æ¨å‡º &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ç»ˆç«¯åº”ç”¨ç¨‹åºå›¾æ ‡"></h4>
-      <h4>é›†æˆONNX - å³å°†æ¨å‡º &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="å…¥é—¨å›¾æ ‡"></h4>
+      <h4>¼¯³ÉTensorFlow &nbsp;&nbsp;&nbsp;<a href="samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow">C#£¨ÒÑ·­Òë£©</a> &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>Ä¿±ê¼ì²â ¼´½«ÍÆ³ö &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
+      <h4>·ç¸ñ×ªÒÆ  ¼´½«ÍÆ³ö &nbsp;&nbsp;&nbsp;<img src="images/app-type-e2e.png" alt="ÖÕ¶ËÓ¦ÓÃ³ÌĞòÍ¼±ê"></h4>
+      <h4>¼¯³ÉONNX - ¼´½«ÍÆ³ö &nbsp;&nbsp;&nbsp;<img src="images/app-type-getting-started.png" alt="ÈëÃÅÍ¼±ê"></h4>
   </td>
  </tr>
  </table>
 
-**é…ç½®NuGetæº:** é€šå¸¸ï¼Œæ‚¨åªéœ€è¦ä½¿ç”¨å¸¸è§„çš„NuGetæº https://api.nuget.org/v3/index.json ï¼Œ ç„¶è€Œï¼Œåœ¨å‘å¸ƒæ¬¡è¦ç‰ˆæœ¬ï¼ˆä¾‹å¦‚0.8ã€0.9ç­‰ï¼‰ä¹‹å‰çš„å‡ å¤©å†…ï¼Œæˆ‘ä»¬å°†ä½¿ç”¨MyGetä¸­å¯ç”¨çš„é¢„è§ˆç‰ˆNuGetåŒ…ï¼ˆä¾‹å¦‚0.8.0-preview-27128-1ï¼‰ï¼Œè¿™åœ¨å¸¸è§„NuGetæºä¸­ä¸å¯ç”¨ã€‚
+**ÅäÖÃNuGetÔ´:** Í¨³££¬ÄúÖ»ĞèÒªÊ¹ÓÃ³£¹æµÄNuGetÔ´ https://api.nuget.org/v3/index.json £¬ È»¶ø£¬ÔÚ·¢²¼´ÎÒª°æ±¾£¨ÀıÈç0.8¡¢0.9µÈ£©Ö®Ç°µÄ¼¸ÌìÄÚ£¬ÎÒÃÇ½«Ê¹ÓÃMyGetÖĞ¿ÉÓÃµÄÔ¤ÀÀ°æNuGet°ü£¨ÀıÈç0.8.0-preview-27128-1£©£¬ÕâÔÚ³£¹æNuGetÔ´ÖĞ²»¿ÉÓÃ¡£
 
-å¦‚æœæ˜¯è¿™ç§æƒ…å†µï¼Œè¯·åœ¨Visual Studioä¸­é…ç½®MyGetæºï¼š
+Èç¹ûÊÇÕâÖÖÇé¿ö£¬ÇëÔÚVisual StudioÖĞÅäÖÃMyGetÔ´£º
 
 https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
 
 -------------------------------------------------------
 
-## å…¶ä»–ç¤¾åŒºç¤ºä¾‹
+## ÆäËûÉçÇøÊ¾Àı
 
-é™¤äº†å¾®è½¯æä¾›çš„ML.NETç¤ºä¾‹ä¹‹å¤–ï¼Œæˆ‘ä»¬è¿˜åˆ—å‡ºäº†ç¤¾åŒºåˆ›å»ºçš„ç¤ºä¾‹ï¼Œè¿™äº›ç¤ºä¾‹ä½äºå•ç‹¬çš„é¡µé¢ä¸­ï¼š
-[ML.NET ç¤¾åŒºç¤ºä¾‹](https://github.com/dotnet/machinelearning-samples/blob/master/docs/COMMUNITY-SAMPLES.md)
+³ıÁËÎ¢ÈíÌá¹©µÄML.NETÊ¾ÀıÖ®Íâ£¬ÎÒÃÇ»¹ÁĞ³öÁËÉçÇø´´½¨µÄÊ¾Àı£¬ÕâĞ©Ê¾ÀıÎ»ÓÚµ¥¶ÀµÄÒ³ÃæÖĞ£º
+[ML.NET ÉçÇøÊ¾Àı](https://github.com/dotnet/machinelearning-samples/blob/master/docs/COMMUNITY-SAMPLES.md)
 
-è¿™äº›ç¤¾åŒºç¤ºä¾‹ä¸æ˜¯ç”±å¾®è½¯ç»´æŠ¤ï¼Œè€Œæ˜¯ç”±å…¶æ‰€æœ‰è€…ç»´æŠ¤ã€‚
-å¦‚æœæ‚¨å·²ç»åˆ›å»ºäº†ä»»ä½•å¾ˆé…·çš„ML.NETç¤ºä¾‹ï¼Œè¯·å°†å…¶ä¿¡æ¯æ·»åŠ åˆ°æ­¤[REQUEST issue](https://github.com/dotnet/machinelearning-samples/issues/86) ï¼Œæˆ‘ä»¬æœ€ç»ˆå°†åœ¨ä¸Šé¢æåˆ°çš„é¡µé¢å‘å¸ƒå…¶ä¿¡æ¯ã€‚
+ÕâĞ©ÉçÇøÊ¾Àı²»ÊÇÓÉÎ¢ÈíÎ¬»¤£¬¶øÊÇÓÉÆäËùÓĞÕßÎ¬»¤¡£
+Èç¹ûÄúÒÑ¾­´´½¨ÁËÈÎºÎºÜ¿áµÄML.NETÊ¾Àı£¬Çë½«ÆäĞÅÏ¢Ìí¼Óµ½´Ë[REQUEST issue](https://github.com/dotnet/machinelearning-samples/issues/86) £¬ÎÒÃÇ×îÖÕ½«ÔÚÉÏÃæÌáµ½µÄÒ³Ãæ·¢²¼ÆäĞÅÏ¢¡£
 
-## äº†è§£æ›´å¤š
+## ÁË½â¸ü¶à
 
-æ•™ç¨‹ï¼Œæœºå™¨å­¦ä¹ åŸºç¡€çŸ¥è¯†ç­‰è¯¦ç»†ä¿¡æ¯ï¼Œè¯·å‚é˜…[ML.NETæŒ‡å—](https://docs.microsoft.com/en-us/dotnet/machine-learning/) ã€‚
+½Ì³Ì£¬»úÆ÷Ñ§Ï°»ù´¡ÖªÊ¶µÈÏêÏ¸ĞÅÏ¢£¬Çë²ÎÔÄ[ML.NETÖ¸ÄÏ](https://docs.microsoft.com/en-us/dotnet/machine-learning/) ¡£
 
-## APIå‚è€ƒ
+## API²Î¿¼
 
-è¯·æŸ¥çœ‹[ML.NET APIå‚è€ƒ](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)ï¼Œäº†è§£å„ç§å¯ç”¨çš„ APIã€‚
+Çë²é¿´[ML.NET API²Î¿¼](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)£¬ÁË½â¸÷ÖÖ¿ÉÓÃµÄ API¡£
 
-## è´¡çŒ®
+## ¹±Ï×
 
-æˆ‘ä»¬æ¬¢è¿è´¡çŒ®ï¼ è¯·æŸ¥çœ‹æˆ‘ä»¬çš„[è´¡çŒ®æŒ‡å—](CONTRIBUTING.md)ã€‚
+ÎÒÃÇ»¶Ó­¹±Ï×£¡ Çë²é¿´ÎÒÃÇµÄ[¹±Ï×Ö¸ÄÏ](CONTRIBUTING.md)¡£
 
-## ç¤¾åŒº
+## ÉçÇø
 
-è¯·åŠ å…¥æˆ‘ä»¬çš„Gitterç¤¾åŒº [![Join the chat at https://gitter.im/dotnet/mlnet](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dotnet/mlnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Çë¼ÓÈëÎÒÃÇµÄGitterÉçÇø [![Join the chat at https://gitter.im/dotnet/mlnet](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dotnet/mlnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-è¿™ä¸ªé¡¹ç›®é‡‡ç”¨äº†[è´¡çŒ®è€…ç›Ÿçº¦](http://contributor-covenant.org/)è§„å®šçš„è¡Œä¸ºå‡†åˆ™ï¼Œä»¥è¡¨æ˜æˆ‘ä»¬ç¤¾åŒºçš„é¢„æœŸè¡Œä¸ºã€‚æœ‰å…³æ›´å¤šä¿¡æ¯ï¼Œè¯·å‚è§[.NETåŸºé‡‘ä¼šè¡Œä¸ºå‡†åˆ™](https://dotnetfoundation.org/code-of-conduct)ã€‚
+Õâ¸öÏîÄ¿²ÉÓÃÁË[¹±Ï×ÕßÃËÔ¼](http://contributor-covenant.org/)¹æ¶¨µÄĞĞÎª×¼Ôò£¬ÒÔ±íÃ÷ÎÒÃÇÉçÇøµÄÔ¤ÆÚĞĞÎª¡£ÓĞ¹Ø¸ü¶àĞÅÏ¢£¬Çë²Î¼û[.NET»ù½ğ»áĞĞÎª×¼Ôò](https://dotnetfoundation.org/code-of-conduct)¡£
 
-## è®¸å¯è¯
+## Ğí¿ÉÖ¤
 
-[ML.NET ç¤ºä¾‹](https://github.com/dotnet/machinelearning-samples)æ ¹æ®[MITè®¸å¯è¯](https://github.com/dotnet/machinelearning-samples/blob/master/LICENSE)è·å¾—è®¸å¯ã€‚
+[ML.NET Ê¾Àı](https://github.com/dotnet/machinelearning-samples)¸ù¾İ[MITĞí¿ÉÖ¤](https://github.com/dotnet/machinelearning-samples/blob/master/LICENSE)»ñµÃĞí¿É¡£
